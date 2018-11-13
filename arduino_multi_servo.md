@@ -1,7 +1,7 @@
 arduino multi servo control
 =============
 
-# arduino code
+## arduino code
 <pre><code>
 #if (ARDUINO >= 100)
  #include <Arduino.h>
@@ -50,7 +50,7 @@ void loop(){
 }
 </code></pre>
 
-# ros connect
+## ros connect
 
 <pre><code>
  rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0
