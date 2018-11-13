@@ -1,9 +1,8 @@
 arduino multi servo control
 =============
 
-
+# arduino code
 <pre><code>
-
 #if (ARDUINO >= 100)
  #include <Arduino.h>
 #else
@@ -51,3 +50,9 @@ void loop(){
 }
 </code></pre>
 
+# ros connect
+
+<pre><code>
+ rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0
+ rostopic pub /servo std_msgs/UInt16MultiArray "{data: [0, 0, 0]}" --once
+</code></pre>
